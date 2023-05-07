@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  color: hsl(218, 44%, 22%);
+  background-color: hsl(0, 0%, 100%);
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 15px;
+}
+body .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  background-color: hsl(212, 45%, 89%);
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 375px) {
+  body .container {
+    height: 100vh;
+  }
+}
+body .container .qr-card {
+  width: 290px;
+  min-width: 290px;
+  max-width: 290px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+body .container .qr-card .qr-code {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+body .container .qr-card .qr-code img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 15px;
+}
+body .container .qr-card .qr-code-text {
+  color: hsl(220, 15%, 55%);
+  margin-bottom: 1rem;
+}
+body .container .qr-card .qr-code-text h1 {
+  font-size: 21px;
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
